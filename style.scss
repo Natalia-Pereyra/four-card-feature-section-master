@@ -1,0 +1,86 @@
+@import "./variables";
+
+* {
+    margin: 0;
+}
+header {
+    text-align: center;
+    p {
+        font-size: 1.2em;
+    }
+}
+p {
+    color: $h1-color;
+    margin-top: 15px;
+}
+h1 {
+    color: $headers-color;
+}
+body {
+    font-family: $font-family;
+    font-size: 1em;
+    max-width: 375px;
+    width: 100%;
+    margin: 100px auto;
+}
+main {
+    margin: 100px auto;
+}
+h3 {
+   color: $h1-color;
+    font-weight: 100;
+    font-size: 2em;
+}
+h2 {
+    margin: 0;
+    @extend h1;
+}
+
+@mixin boxStyling($color) {
+    border-top: 4px solid $color;
+    border-radius: 10px;
+    
+}
+
+div {
+    box-shadow: 3px 5px 20px $h1-color;
+    margin: 50px 20px;
+    padding: 20px 17px 110px;
+    position: relative;
+}
+
+#supervisor {
+            @include boxStyling(hsl(180, 62%, 55%));
+}
+    
+        #team-builder {
+            @include boxStyling(hsl(0, 78%, 62%));
+        }
+    
+        #karma {
+            @include boxStyling(hsl(34, 97%, 64%));
+        }
+    
+        #calculator {
+            @include boxStyling(hsl(212, 86%, 64%));
+        }
+
+img {
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        display: flex;
+        align-items: center;
+    }
+    body {
+        max-width: 1200px;
+        width: 100%;
+    }
+    div {
+        min-width: 240px;
+    }
+}
