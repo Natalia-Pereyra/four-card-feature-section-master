@@ -50,20 +50,20 @@ div {
 }
 
 #supervisor {
-            @include boxStyling(hsl(180, 62%, 55%));
+@include boxStyling(hsl(180, 62%, 55%));
 }
     
-        #team-builder {
-            @include boxStyling(hsl(0, 78%, 62%));
-        }
-    
-        #karma {
-            @include boxStyling(hsl(34, 97%, 64%));
-        }
-    
-        #calculator {
-            @include boxStyling(hsl(212, 86%, 64%));
-        }
+#team-builder {
+    @include boxStyling(hsl(0, 78%, 62%));
+}
+
+#karma {
+    @include boxStyling(hsl(34, 97%, 64%));
+}
+
+#calculator {
+    @include boxStyling(hsl(212, 86%, 64%));
+}
 
 img {
     position: absolute;
@@ -71,7 +71,7 @@ img {
     bottom: 22px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 900px) {
     main {
         display: flex;
         align-items: center;
@@ -82,5 +82,9 @@ img {
     }
     div {
         min-width: 240px;
+    }
+    #supervisor {
+        min-width: 333px;
+       
     }
 }

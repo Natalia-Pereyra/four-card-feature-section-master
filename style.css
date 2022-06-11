@@ -75,7 +75,7 @@ img {
   bottom: 22px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 900px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -90,6 +90,9 @@ img {
   }
   div {
     min-width: 240px;
+  }
+  #supervisor {
+    min-width: 333px;
   }
 }
 /*# sourceMappingURL=style.css.map */
